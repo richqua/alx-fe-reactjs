@@ -2,6 +2,9 @@ import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
 import WelcomeMessage from './components/WelcomeMessage';
+import Footer from './Footer Component/Footer';
+import Header from './Header Component/Header';
+import MainContent from './Main Content Component/MainContent';
 import viteLogo from '/vite.svg';
 
 function App() {
@@ -30,7 +33,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <WelcomeMessage />
+      <WelcomeMessage/>
+      <Header/>
+      <MainContent/>
+      <Footer/>
     </>
   )
 }
