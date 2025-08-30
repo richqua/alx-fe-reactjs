@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
+import Footer from './components/Footer Component/Footer';
+import Header from './components/Header Component/Header';
+import MainContent from './components/Main Content Component/MainContent';
 import WelcomeMessage from './components/WelcomeMessage';
-import Footer from './Specific Components/Footer Component/Footer';
-import Header from './Specific Components/Header Component/Header';
-import MainContent from './Specific Components/Main Content Component/MainContent';
 import viteLogo from '/vite.svg';
 
 function App() {
