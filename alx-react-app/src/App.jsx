@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
-import WelcomeMessage from './WelcomeMessage';
+import WelcomeMessage from './components/WelcomeMessage';
 import viteLogo from '/vite.svg';
 
 function App() {
