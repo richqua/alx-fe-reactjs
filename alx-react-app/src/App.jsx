@@ -2,9 +2,9 @@ import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
 import WelcomeMessage from './components/WelcomeMessage';
-import Footer from './Footer Component/Footer';
-import Header from './Header Component/Header';
-import MainContent from './Main Content Component/MainContent';
+import Footer from './Specified Components/Footer Component/Footer';
+import Header from './Specified Components/Header Component/Header';
+import MainContent from './Specified Components/Main Content Component/MainContent';
 import viteLogo from '/vite.svg';
 
 function App() {
