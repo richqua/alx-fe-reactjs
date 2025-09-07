@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
-import Comments from './components/Comments';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
@@ -44,17 +43,6 @@ function App() {
         age="25"
         bio="Loves hiking and photography"
       />
-      <Comments
-      love="Benedictus"
-      time= "11pm"
-      issues="lying to girls" 
-      />
-    </div>
-    <div>
-      <comments
-      love="Benedictus"
-      time= "11pm"
-      issues="lying to girls" />
     </div>
       <Footer />
     </>
