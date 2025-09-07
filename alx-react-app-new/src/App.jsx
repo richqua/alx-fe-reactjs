@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
+import Counter from './components/Counter';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
@@ -43,6 +44,7 @@ function App() {
         age="25"
         bio="Loves hiking and photography"
       />
+      <Counter />
     </div>
       <Footer />
     </>
