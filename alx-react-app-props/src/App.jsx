@@ -2,16 +2,18 @@ import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
 import App from './components/App';
-import Comments from './components/Comments';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import UserProfile from './components/UserProfile';
 import WelcomeMessage from './components/WelcomeMessage';
+import ProfilePage from './ProfilePage';
+import UserContext from './UserContext';
 import viteLogo from '/vite.svg';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
 
   return (
     <>
@@ -45,22 +47,16 @@ function App() {
         age="25"
         bio="Loves hiking and photography"
       />
-      <Comments
-      love="Benedictus"
-      time= "11pm"
-      issues="lying to girls" 
-      />
-    </div>
-    <div>
-      <comments
-      love="Benedictus"
-      time= "11pm"
-      issues="lying to girls" />
-    </div>
-      <App />
+      </div>
+      <div>
+      <UserContext.Provider value={userData}>
+        <ProfilePage />
+      </UserContext.Provider>
+      </div>
       <Footer />
     </>
   )
+  
 }
 
 export default App
