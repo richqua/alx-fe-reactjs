@@ -28,7 +28,7 @@ const EditRecipeForm = ({ recipeId, onClose }) => {
       return;
     }
     updateRecipe({ id: recipeId, title, description });
-    onClose(); // optional: close form after update
+    onClose();
   };
 
   return (
