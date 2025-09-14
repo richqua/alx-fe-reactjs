@@ -4,7 +4,6 @@
 // 3. Keeps Add/Remove Favorites working.
 // 4. Works together with SearchBar.jsx.
 
-
 import { Link } from "react-router-dom";
 import useRecipeStore from "./recipeStore"; // adjust path if needed
 

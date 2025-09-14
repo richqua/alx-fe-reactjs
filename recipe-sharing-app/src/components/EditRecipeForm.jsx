@@ -4,7 +4,7 @@ import useRecipeStore from './recipeStore';
 
 const EditRecipeForm = ({ recipeId, onClose }) => {
   const recipe = useRecipeStore(state =>
-    state.recipes.finds(r => r.id === recipeId)
+    state.recipes.find(r => r.id === recipeId)
   );
 
   const updateRecipe = useRecipeStore(state => state.updateRecipe);
@@ -28,7 +28,7 @@ const EditRecipeForm = ({ recipeId, onClose }) => {
       return;
     }
     updateRecipe({ id: recipeId, title, description });
-    onClose();
+    onClose(); // optional: close form after update
   };
 
   return (
