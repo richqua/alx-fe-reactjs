@@ -11,7 +11,7 @@ Create a component that:
 Export this component as default.
 */
 
-import useRecipeStore from '../store/recipeStore';
+import useRecipeStore from './recipeStore';
 
 const FavoritesList = () => {
   const favorites = useRecipeStore(state => state.favorites);

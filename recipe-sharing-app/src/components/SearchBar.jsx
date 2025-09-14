@@ -10,7 +10,7 @@ Requirements:
 - Style the input with margin-bottom, padding, and full width
 - Export the component as default
 */
-import useRecipeStore from '../store/recipeStore'; // Adjust the import path as necessary
+import useRecipeStore from './recipeStore'; // Adjust the import path as necessary
 
 const SearchBar = () => {
   const searchTerm = useRecipeStore(state => state.searchTerm);
