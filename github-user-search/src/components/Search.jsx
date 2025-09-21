@@ -22,7 +22,11 @@ const Search = () => {
     try {
       const users = await fetchAdvancedUsers(username, location, minRepos, page);
 
-      // Fetch full details for each user (to get location, repos count, etc.)
+      if (users.length === 0) {
+        setError("Looks like we can’t find the user");
+        return;
+      }
+
       const detailedUsers = await Promise.all(
         users.map((user) => fetchUserDetails(user.login))
       );
