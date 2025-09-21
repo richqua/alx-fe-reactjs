@@ -8,7 +8,15 @@ const api = axios.create({
 });
 
 /**
- * Build advanced search query using GitHub's search API
+ * Basic user fetch by username (for simple search)
+ */
+export const fetchUserData = async (username) => {
+  const response = await api.get(`/users/${username}`);
+  return response.data;
+};
+
+/**
+ * Advanced user search using GitHub's search API
  */
 export const fetchAdvancedUsers = async (username, location, minRepos, page = 1) => {
   let query = '';
