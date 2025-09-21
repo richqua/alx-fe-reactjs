@@ -1,8 +1,5 @@
 import { useState } from 'react';
-import {
-    fetchAdvancedUsers,
-    fetchUserDetails,
-} from '../services/githubService';
+import { fetchUserData } from '../services/githubService'; // updated import
 
 const Search = () => {
   const [username, setUsername] = useState('');
@@ -20,18 +17,14 @@ const Search = () => {
     setResults([]);
 
     try {
-      const users = await fetchAdvancedUsers(username, location, minRepos, page);
+      const users = await fetchUserData(username, location, minRepos, page); // updated call
 
       if (users.length === 0) {
         setError("Looks like we cant find the user");
         return;
       }
 
-      const detailedUsers = await Promise.all(
-        users.map((user) => fetchUserDetails(user.login))
-      );
-
-      setResults(detailedUsers);
+      setResults(users);
     } catch (err) {
       setError('Failed to fetch users. Please try again.');
     } finally {

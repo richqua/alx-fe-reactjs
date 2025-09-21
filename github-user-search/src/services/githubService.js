@@ -25,9 +25,15 @@ export const fetchAdvancedUsers = async (username, location, minRepos, page = 1)
   if (location) query += `+location:${location}`;
   if (minRepos) query += `+repos:>${minRepos}`;
 
-  const response = await api.get(
-    `/search/users?q=${encodeURIComponent(query)}&per_page=10&page=${page}`
-  );
+  const url = `https://api.github.com/search/users?q=${encodeURIComponent(query)}&per_page=10&page=${page}`;
+
+  // Use full URL to satisfy the requirement
+  const response = await axios.get(url, {
+    headers: {
+      Authorization: `token ${import.meta.env.VITE_GITHUB_API_TOKEN}`,
+    },
+  });
+
   return response.data.items;
 };
 
