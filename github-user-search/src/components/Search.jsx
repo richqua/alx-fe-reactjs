@@ -23,7 +23,7 @@ const Search = () => {
       const users = await fetchAdvancedUsers(username, location, minRepos, page);
 
       if (users.length === 0) {
-        setError("Looks like we can’t find the user");
+        setError("Looks like we cant find the user");
         return;
       }
 
