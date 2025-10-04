@@ -3,24 +3,40 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g grated parmesan",
+      "Black pepper to taste"
+    ],
+    "instructions": [
+      "Boil pasta until al dente.",
+      "Fry pancetta until crisp.",
+      "Beat eggs with parmesan and pepper.",
+      "Mix everything together while pasta is hot."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": 3,
-    "title": "Sushi",
-    "summary": "A traditional Japanese dish of vinegared rice with seafood and vegetables.",
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": 4,
-    "title": "Beef Tacos",
-    "summary": "Mexican-style beef tacos with seasoned meat, fresh salsa, and cheese.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g chicken breast",
+      "1 cup yogurt",
+      "2 tsp garam masala",
+      "1 onion",
+      "1 cup tomato puree",
+      "1/2 cup cream"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt and spices.",
+      "Grill the chicken until cooked.",
+      "Saute onions and add tomato puree.",
+      "Add cream and grilled chicken.",
+      "Simmer for 10 minutes."
+    ]
   }
 ]
